@@ -1,4 +1,4 @@
-#### Install Microsoft R Open + Math Kernel Library on ubuntu 14.04
+#### Install Microsoft R Open + Math Kernel Library on ubuntu 14.04 (CPU: 4 Core RAM: 64 RAM)
 
 #### Install MRO
 ```
