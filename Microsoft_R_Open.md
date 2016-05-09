@@ -19,15 +19,23 @@ cd RevoMath
 ```
 A <- matrix(trunc(rnorm(512*512)*100), 512,512)
 system.time(solve(A))
+#   user  system elapsed 
+#   0.044   0.000   0.007
 
 A <- matrix(trunc(rnorm(1024*1024)*100), 1024,1024)
 system.time(solve(A))
+# user  system elapsed 
+# 0.228   0.000   0.037
 
 A <- matrix(trunc(rnorm(2048*2048)*100), 2048,2048)
 system.time(solve(A))
+# user  system elapsed 
+# 1.800   0.004   0.278
 
 A <- matrix(trunc(rnorm(4096*4096)*100), 4096,4096)
 system.time(solve(A))
+# user  system elapsed 
+# 11.256   0.000   1.613
 
 set.seed(123)
 n <- 100000000
@@ -36,5 +44,7 @@ y <- 1 + 2*x + rnorm(n,0,0.1)
 X <- cbind(1, x)
 
 system.time({lm(y~X)}) 
+#    user  system elapsed 
+# 238.836   7.952 240.587
 
 ```
