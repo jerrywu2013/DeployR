@@ -48,3 +48,8 @@ system.time({lm(y~X)})
 # 238.836   7.952 240.587
 
 ```
+####Install RStudio Server
+```
+wget http://download2.rstudio.org/rstudio-server-0.98.1103-amd64.deb
+sudo gdebi rstudio-server-0.98.1103-amd64.deb
+```
